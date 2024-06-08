@@ -7,7 +7,7 @@ import requests
 url = f'https://api.github.com/repos/kubernetes/kubernetes/pulls'
 
 # Make a GET request to fetch pull requests data from the GitHub API
-response = requests.get(url)  # Add headers=headers inside get() for authentication // response will have 200 value.
+response = requests.get(url)  # Add headers=headers inside get() for authentication // response will have 200 value not the complete json value.
 
 # Only if the response is successful
 if response.status_code == 200:
